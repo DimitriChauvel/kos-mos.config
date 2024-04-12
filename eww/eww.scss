@@ -1,0 +1,41 @@
+$color-bg: #192034;
+$color-text-dark: #080B11;
+$color-text-light: #CBD3E6;
+$gradient: linear-gradient(144deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+* {
+	all: unset;
+	font-family: "OverpassM Nerd Font";
+}
+
+.layout {
+	&__child {
+		border-radius: 5px;
+	}
+	
+	&__btn-powermenu {
+                padding: 5px;
+
+		color: $color-text-dark;
+		font-size: 1.5em;
+		
+		background-image: $gradient;
+        }
+	
+	&__toolbar {		
+		background-color: $color-bg;
+	}
+	
+	&__hours {
+		background-image: $gradient;
+	}
+}
+
+.test1 {
+  background-color: red;
+}
+
+.test2 {
+  background-color: cyan;
+}
+
