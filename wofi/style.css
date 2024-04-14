@@ -2,8 +2,7 @@
 	all: unset;
 
 	font-family: "OverpassM Nerd Font Mono";
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
 }
 
 window {
@@ -12,6 +11,14 @@ window {
 	border-radius: 5px;
 
 	background-image: linear-gradient(135deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	background-size: 400% 400%;
+	animation: rbg 5s ease infinite;
+}
+
+@keyframes rbg {
+    	0%{background-position:10% 0%}
+    	50%{background-position:91% 100%}
+    	100%{background-position:10% 0%}
 }
 
 #input image.left {
@@ -35,9 +42,10 @@ window {
 #input {
 	height: 60px;
 	
+	color: #c0caf5;
+	
 	margin-bottom: 5px;
 	padding-bottom: 10px;
-	color: #CBD3E6;
 
 	border-bottom: 1px solid #2A3556;
 }
@@ -52,15 +60,17 @@ window {
 
 	border-radius: 3px;
 
-	background-color: #192034;
+	background-color: #1a1b26;
 }
 
 #entry {
 	padding: 5px 10px;
+	transition: padding 0.2s ease-out;
 }
 
 #entry:selected {
-	color: #CBD3E6;
+	color: #c0caf5;
+	padding: 5px 30px;
 }
 
 #img {
